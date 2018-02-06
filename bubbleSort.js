@@ -28,7 +28,6 @@ function secondBubbleSort(arr){
       if (first > second) {
         arr[j] = first
         arr[j-1] = second
-
       }
     }
   }
