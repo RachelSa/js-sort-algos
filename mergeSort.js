@@ -1,10 +1,14 @@
+// merge sort divides an array in half continuously, 
+// until the subarrays have an length of one. It merges the subarrays
+// in sorted order, and returns the fully merged array.
+
 class MergeSort{
   constructor(arr){
     this.arr = arr
     let sorted = this.sortArray(this.arr)
     console.log(sorted)
   }
-  
+
   sortArray(arr){
     if (arr.length <= 1){
       return arr

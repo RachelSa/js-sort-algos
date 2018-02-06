@@ -1,3 +1,11 @@
+// selection sort finds the minimum element in an array,
+// and places it at the beginning. It searches the unsorted
+// part of the array for the next minimum until it reaches
+// the length of the array.
+
+// with two nested loops, the time complexity O(n^2)
+
+
 function selectionSort(arr){
   for (let i = 0; i < arr.length; i++){
     let min_index = i
