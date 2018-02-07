@@ -4,8 +4,6 @@
 // the length of the array.
 
 // with two nested loops, the time complexity O(n^2)
-
-
 function selectionSort(arr){
   for (let i = 0; i < arr.length; i++){
     let min_index = i
@@ -22,3 +20,28 @@ function selectionSort(arr){
 }
 let arr = [5,7,1,12,3,15,6,18,19]
 console.log(selectionSort(arr))
+
+
+
+
+
+//selection sort: find smallest el; add to beginning; repeat from next index onwards
+
+
+// function selectionSort(arr, el){
+//   for (let i = 0; i < arr.length; i++){
+//     let minIndex = i
+//     for (let j = (i+1); j < arr.length; j++){
+//       if (arr[j] < arr[minIndex]){
+//         minIndex = j
+//       }
+//     }
+//     let min = arr[minIndex]
+//     arr[minIndex] = arr[i]
+//     arr[i] = min
+//   }
+//   return arr
+// }
+//
+// let arr = [5,7,1,12,3,15,6,18,19]
+// console.log(selectionSort(arr))

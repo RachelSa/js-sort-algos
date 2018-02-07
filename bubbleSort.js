@@ -16,9 +16,9 @@ function firstBubbleSort(arr){
   } while (redo);
   return arr
 }
-
 console.log(firstBubbleSort(arr))
 
+// O(n^2)
 function secondBubbleSort(arr){
   let arrLength = arr.length
   for (let i = (arrLength - 1); i >= 0; i-- ){

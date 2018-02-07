@@ -1,4 +1,4 @@
-// merge sort divides an array in half continuously, 
+// merge sort divides an array in half continuously,
 // until the subarrays have an length of one. It merges the subarrays
 // in sorted order, and returns the fully merged array.
 
@@ -43,3 +43,34 @@ class MergeSort{
 }
 
 let m = new MergeSort([5,7,1,12,3,15,6,18, 19])
+
+
+// function mergeSort(arr){
+//   if (arr.length === 1){
+//     return arr
+//   }
+//   let mid = parseInt(arr.length/2)
+//   let left = arr.slice(0,mid)
+//   let right = arr.slice(mid)
+//   return merge(mergeSort(left), mergeSort(right))
+// }
+//
+// function merge(left, right){
+//   lIndex = 0
+//   rIndex = 0
+//   let result = []
+//   while (lIndex < left.length && rIndex < right.length){
+//     if (left[lIndex] < right[rIndex]){
+//       result.push(left[lIndex])
+//       lIndex++
+//     } else {
+//       result.push(right[rIndex])
+//       rIndex++
+//     }
+//   }
+//   let leftRemainder = left.slice(lIndex)
+//   let rightRemainder = right.slice(rIndex)
+//   return [...result, ...leftRemainder, ...rightRemainder]
+// }
+//
+// console.log(mergeSort([5,7,1,12,3,15,6,18,19]))
